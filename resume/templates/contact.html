@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+<div class="row my-4">
+    <div class="row my-1">
+      <div class ="col-1 offset-1  "> <img class="location_image" src="{% static 'css/images/location.png' %}"   > </div>
+      <div class ="col-3  "> <h6 class="location_text"> Srikakulam, Andhra Pradesh, 532264 </h6> </div>
+    </div>
+
+    <div class="row my-1">
+      <div class ="col-1 offset-1  "> <img class="location_image" src="{% static 'css/images/mobile.png' %}"   > </div>
+      <div class ="col-8  "> <h6 class="location_text">+91 8897445420 </h6> </div>
+    </div>
+
+    <div class="row my-1">
+      <div class ="col-1 offset-1  "> <img class="location_image" src="{% static 'css/images/email.png' %}"   >  </div>
+      <div class ="col-8  "> <h6 class="location_text">tsantoshkumar8897@gmail.com</h6> </div>
+    </div>
+      <h5 class="contact_message"> let's get in touch, send a message. </h5>
+
+    <div class="container form-container">
+         {% comment %} <label for="exampleInputEmail1" class="form-label">Enter Name</label>
+          <input type="text"  name="name" class="form-control" id="exampleInputEmail1" >  {% endcomment %}
+
+           <form action="https://api.web3forms.com/submit" method="POST">
+             
+            <div class="form-group m-3">
+              
+               <input type="hidden" name="access_key" value="862196fe-d7db-43dd-b049-4ab9baaa4e64">
+               <div class="form-group m-3">
+                 <label for="exampleInputEmail1" class="form-label">Enter Name</label>
+                 <input type="text"  name="name" class="form-control" id="exampleInputEmail1" > 
+               {% comment %} <div class ="col-10 offset-1 mt-5"> {% endcomment %}
+              </div>
+        <div class="form-group m-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email" >
+        </div>
+        <div class="form-group m-3">
+            <label for="phone" class="form-label">Phone No</label>
+            <input type="tel" name="mobile" class="form-control" id="phone" >
+        </div>
+        <div class="form-group m-3">
+            <label for="msg" class="form-label">Message</label>
+            <textarea type="text"  name="message" class="form-control" id="msg" rows="2" > </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock%}

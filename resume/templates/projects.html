@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+<div class="row my-2 project_images ">
+    {% for project in projects_show %}
+    <div class='col-10 ms-5'> 
+    <h4 class="project_name">{{project.title}} </h4>
+    {% comment %} <h5><a href="project.git_hub" target="_blank" class="ms-3"> {% endcomment %}
+    <img src="{% static project.path  %}"  alt="" height='1500' width='1500' class='img-fluid align-item-center'> 
+</div>
+    {% endfor %}
+</div>
+{% endblock%}

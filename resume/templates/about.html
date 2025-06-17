@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+<div class="row my-5">
+    <div class="col-4 d-flex justify-content-center align-item-center">
+        <img class="about_image" src="{% static 'css/images/im1.jpg' %}" alt="image">
+    </div> 
+    <div class="col-7 text-left text-light about_text">
+        <h2>Hello !</h2>
+        
+        <p class='fs-5'>
+            As a Full Stack Python Developer, I am dedicated to helping others learn python and DRF while continuosly improving my own programming skills. I Have a strong foundation in python and a deep understanding of its concepts, systax and best practice.
+        </p>
+
+       
+    </div>
+</div>
+
+<div class="row my-2 ">
+    <h2 class="text-center" style = "color:#4fffb0"> My Tech Stack </h2>
+        
+    <div class="d-flex justify-content-around align-items-center my-3 courses">
+            <img class="img-fluid about_course" src="{% static 'css/images/html.png' %}" alt=""  >
+            <img class="img-fluid about_course" src="{% static 'css/images/css.jpg' %}" alt=""  >
+            <img class="img-fluid about_course" src="{% static 'css/images/python.png' %}" alt="">
+            <img class="img-fluid about_course" src="{% static 'css/images/django.png' %}" alt=""  >
+            <img class="img-fluid about_course1" src="{% static 'css/images/ai.png' %}" alt=""  >
+            <img class="img-fluid about_course" src="{% static 'css/images/datascince.jpg' %}" alt=""  >
+            <img class="img-fluid about_course2" src="{% static 'css/images/js.jpg' %}" alt=""  >
+            <img class="img-fluid about_course" src="{% static 'css/images/react.png' %}" alt="">
+            <img class="img-fluid about_course" src="{% static 'css/images/pgadmin.jpg' %}" alt="">
+    </div>
+    
+       
+</div> 
+{% comment %} <div class="row my-2 coursess">
+    <h2 class="" style = "color:#4fffb0"> My Tech Stack </h2>
+    <h5>HTML</h5>
+    <h5>CSS</h5>
+    <h5>PYTHON</h5>
+    <h5>DJANGO</h5>
+    <h5>POSTGRESQL</h5>
+</div> {% endcomment %}
+{% endblock%}

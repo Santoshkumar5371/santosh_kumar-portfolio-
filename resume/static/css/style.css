@@ -1,0 +1,132 @@
+body {
+    background-color:rgb(20,0, 10) ;
+}
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color:#55c9ff;
+}
+.navbar-nav .nav-link {
+    font-size: 20px;
+
+}
+.navbar-brand{
+    font-size: 25px;
+}
+.navbar-dark{
+    background-color: rgb(18,1,48);
+}
+.circular-image-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #d0cad4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image{
+    width: 153%;
+    height: auto;
+    display: block;
+}
+.title{
+    color: #55c9ff;
+}
+.name{
+    color: beige;
+}
+.social_links{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_image{
+    width: 200px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+   
+}
+.about_course{
+    height: 110px;
+    width: 110px;
+    border-radius: 10px;
+}
+.about_course1{
+    height: 140px;
+    width: 200px;
+    border-radius: 10px;
+}
+.about_course2{
+    height: 110px;
+    width: 130px;
+    border-radius: 10px;
+}
+.jumbtron{
+    background-color: #002244;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.display4{
+    color: #eef3f8;
+    font-size: 24px;
+}
+.lead{
+    font-size: 18px;
+    color: #28a745;
+}
+.form-container{
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+.location_image{
+    height: 30px;
+    width: 30px;
+    padding: 1px;
+    
+}
+
+.location_text{
+    color: burlywood;
+    padding-top: 4px;
+}
+.project_name{
+    color: orange;
+    text-size-adjust: 25px;
+    text-align: center;
+    padding: 10px;
+}
+.contact_message{
+    color: rgb(30, 12, 83);
+}
+
+@media (max-width:800px) {
+    .about_image{
+        width: 180vw;
+        display:block;
+        letter-spacing: 0px;
+
+    }
+    .about_text{
+        /* width: 20vw; */
+        display: none;
+    }
+    .courses{
+
+        width: 18vw;
+    }
+   
+
+}
+
+
